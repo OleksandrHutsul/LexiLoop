@@ -48,6 +48,7 @@ builder.Services.AddSingleton<LearningHandler>();
 builder.Services.AddSingleton<CollectionHandler>();
 builder.Services.AddSingleton<CommandHandler>();
 builder.Services.AddSingleton<TelegramUpdateHandler>();
+builder.Services.AddSingleton<CollectionSharingHandler>();
 
 builder.Services.AddHostedService<TelegramBotWorker>();
 builder.Services.AddHostedService<ReviewNotificationWorker>();
